@@ -1,3 +1,8 @@
+# add to .bashrc
+# if [ -f ~/.bash_aliases ]; then
+#     . ~/.bash_aliases
+# fi
+
 alias l='ls --color=auto'
 alias ll='ls -halF --color=auto'
 alias lld='ls -halFt --color=auto'
