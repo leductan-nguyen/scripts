@@ -9,7 +9,7 @@ alias lld='ls -halFt --color=auto'
 alias cl='clear'
 alias ..='cd ..'
 alias reboot='reboot'
-alias update='sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get autoremove && sudo apt-get autoclean'
+alias update='sudo apt update && sudo apt list --upgradable && sudo apt upgrade && sudo apt-get autoremove && sudo apt-get autoclean'
 alias h='history'
 alias ports='netstat -tanlup'
 
