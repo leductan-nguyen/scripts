@@ -11,7 +11,7 @@ alias ..='cd ..'
 alias reboot='reboot'
 alias update='sudo apt update && sudo apt list --upgradable && sudo apt upgrade && sudo apt-get autoremove && sudo apt-get autoclean'
 alias h='history'
-alias ports='netstat -tanlup'
+alias ports='netstat -tnlup'
 
 alias ga='git add'
 alias gaa='git add --all'
