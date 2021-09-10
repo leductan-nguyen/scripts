@@ -3,6 +3,9 @@
 #     . ~/.bash_aliases
 # fi
 
+# if use Oh-My-ZSH
+# create a custom file ~/.oh-my-zsh/custom/aliases.zsh
+
 alias l='ls --color=auto'
 alias ll='ls -halF --color=auto'
 alias lld='ls -halFt --color=auto'
