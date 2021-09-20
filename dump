@@ -1,0 +1,52 @@
+#!/bin/bash
+
+if [ $# -lt 2 ]
+  then
+    echo "======  Usage  ======"
+    echo
+    echo dump [host] [user] [database]
+    echo
+    echo [host] is optional
+    exit 0
+fi
+
+if [ $# -eq 3 ]
+  then
+    # host IP
+    host=$1
+    # user
+    user=$2
+    # Datetime in format 20200211_1100
+    now=$(date +'%Y%m%d_%H%M')
+    db=$3
+  else
+    # host IP
+    host="localhost"
+    # user
+    user=$1
+    # Datetime in format 20200211_1100
+    now=$(date +'%Y%m%d_%H%M')
+    db=$2
+fi
+
+filename="dump_${db}_${now}.sql"
+
+path=$HOME/dump/
+
+# create folder dump in home
+mkdir -p ${path}
+
+# Absolute path for dump file
+filepath=${path}${filename}
+
+echo "Backing up DB into file : ${filepath}"
+
+echo ">>>>>"
+
+#pg_dump -h ${host} -U ${user} -d ${db} > ${filepath}
+echo "pg_dump --dbname=postgresql://${user}:${user}@${host}/${db} > ${filepath}"
+pg_dump --dbname=postgresql://${user}:${user}@${host}/${db} > ${filepath}
+
+echo "Finished. Here is exported file :"
+
+ls -lht ${path} | grep --color -E "^|${filename}"
