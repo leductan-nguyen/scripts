@@ -44,8 +44,8 @@ echo "Backing up DB into file : ${filepath}"
 echo ">>>>>"
 
 #pg_dump -h ${host} -U ${user} -d ${db} > ${filepath}
-echo "pg_dump --dbname=postgresql://${user}:${user}@${host}/${db} > ${filepath}"
-pg_dump --dbname=postgresql://${user}:${user}@${host}/${db} > ${filepath}
+echo "pg_dump -Fc --dbname=postgresql://${user}:${user}@${host}/${db} > ${filepath}"
+pg_dump -Fc --dbname=postgresql://${user}:${user}@${host}/${db} > ${filepath}
 
 echo "Finished. Here is exported file :"
 
