@@ -1,0 +1,34 @@
+const responseJson = pm.response.json();
+const resJsonString = JSON.stringify(responseJson);
+
+const template = `
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery.json-viewer@1.4.0/json-viewer/jquery.json-viewer.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery.json-viewer@1.4.0/json-viewer/jquery.json-viewer.js"></script>
+
+    <style>
+        ol, ul, li {
+            font-size: 14px;
+        }
+
+        li {
+            margin-bottom: 0;
+        }
+
+        .json-document {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    
+    <pre id="json-renderer"></pre>
+
+    <script>
+        const data = ${resJsonString};
+        $('#json-renderer').jsonViewer(data);
+    </script>
+`;
+
+pm.visualizer.set(template);
