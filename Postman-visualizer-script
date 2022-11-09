@@ -1,6 +1,7 @@
 // author 
 // https://gist.github.com/nguyenit67/6e0cde922543de96300b98cb0b724b5a
 // Postman JSON tree view visualizer show count of items in array or keys in an object using `jquery.json-viewer`
+// Put this script inside Tests panel and go to Visualize function
 
 const responseJson = pm.response.json();
 const resJsonString = JSON.stringify(responseJson);
