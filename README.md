@@ -10,4 +10,4 @@ Useful packages for newly installed system (specially for Debian-based system)
     1. git
     2. zsh-autosuggestion (need to clone plugin first in oh-my-zsh custom plugin)
     3. aliases
-    4. docker-compose
+    4. zsh-docker-aliases (need to clone plugin first in oh-my-zsh custom plugin)
