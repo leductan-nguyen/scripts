@@ -11,3 +11,7 @@ Useful packages for newly installed system (specially for Debian-based system)
     2. zsh-autosuggestion (need to clone plugin first in oh-my-zsh custom plugin)
     3. aliases
     4. zsh-docker-aliases (need to clone plugin first in oh-my-zsh custom plugin)
+5. Fix Home End key bug in Zsh, add these lines to .zshrc
+    bindkey  "^[[H"   beginning-of-line
+    bindkey  "^[[F"   end-of-line
+    bindkey  "^[[3~"  delete-char
