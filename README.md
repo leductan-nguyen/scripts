@@ -8,7 +8,7 @@ Useful packages for newly installed system (specially for Debian-based system)
 3. Add custom script in this repo
 4. Add useful plugin for ZSH by modifying .zshrc on home directory (maybe needed to install git first)
     1. git
-    2. zsh-autosuggestion (need to clone plugin first in oh-my-zsh custom plugin)
+    2. zsh-autosuggestions (need to clone plugin first in oh-my-zsh custom plugin)
     3. aliases
     4. zsh-docker-aliases (need to clone plugin first in oh-my-zsh custom plugin)
 5. Fix Home End key bug in Zsh, add these lines to .zshrc  
