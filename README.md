@@ -16,5 +16,6 @@ Useful packages for newly installed system (specially for Debian-based system)
     bindkey  "^[[F"   end-of-line  
     bindkey  "^[[3~"  delete-char
 6. Add custom color for zsh-autosuggestions in .zshrc
-   `#Suggestion Highlight Style
-    ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#525252"
+   
+   `# Suggestion Highlight Style
+   ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#525252"`
