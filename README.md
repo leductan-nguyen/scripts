@@ -14,4 +14,7 @@ Useful packages for newly installed system (specially for Debian-based system)
 5. Fix Home End key bug in Zsh, add these lines to .zshrc  
     bindkey  "^[[H"   beginning-of-line  
     bindkey  "^[[F"   end-of-line  
-    bindkey  "^[[3~"  delete-char  
+    bindkey  "^[[3~"  delete-char
+6. Add custom color for zsh-autosuggestions in .zshrc
+   # Suggestion Highlight Style
+    ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#525252"
