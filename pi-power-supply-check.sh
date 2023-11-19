@@ -53,7 +53,7 @@ function throttledToText {
 
 # Main script, kill sysbench when interrupted
 trap 'kill -HUP 0' EXIT
-sysbench --test=cpu --cpu-max-prime=10000000 --num-threads=4 run > /dev/null &
+sysbench cpu --cpu-max-prime=10000000 --num-threads=4 run > /dev/null &
 maxfreq=$(( $(awk '{printf ("%0.0f",$1/1000); }' < /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq) -15 ))
 
 # Read sys info, print and loop
