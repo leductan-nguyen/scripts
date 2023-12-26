@@ -1,6 +1,8 @@
 ## Collections of conveniant scripts
 1. Aliases (linux, git)
-2. Check for undervoltage/throttling issues on RPi
+2. Dump a Postgres DB with compression
+3. Check for undervoltage/throttling issues on RPi
+4. Postman visualizer script
 
 ## Useful packages for newly installed system (specially for Debian-based system)
 1. Install ZSH via official repository
