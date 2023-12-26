@@ -1,4 +1,3 @@
-
 # Custom aliases for non-root users
 # Show aliases in this file
 alias all='cat ~/.oh-my-zsh/custom/aliases.zsh'
